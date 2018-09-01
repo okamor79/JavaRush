@@ -3,8 +3,6 @@ package com.javarush.task.task09.task0930;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 
 /* 
 Задача по алгоритмам
@@ -30,25 +28,6 @@ public class Solution {
 
     public static void sort(String[] array) {
         //напишите тут ваш код
-        String tmp;
-        for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i + 1; j < array.length; j++) {
-                if (isNumber(array[i])) {
-                    if (isNumber(array[j])) {
-                        if (Integer.parseInt(array[i]) < Integer.parseInt(array[j])) {
-                            tmp = array[j];
-                            array[j] = array[i];
-                            array[i] = tmp;
-                        }
-                    }
-                } else if (isGreaterThan(array[i], array[j])) {
-                    tmp = array[j];
-                    array[j] = array[i];
-                    array[i] = tmp;
-                }
-            }
-        }
-
     }
 
     // Метод для сравнения строк: 'а' больше чем 'b'
