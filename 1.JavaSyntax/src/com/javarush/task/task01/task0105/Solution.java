@@ -1,7 +1,7 @@
-package com.javarush.task.task01.task0101;
+package com.javarush.task.task01.task0105;
 
 /* 
-Круто быть программистом!
+Объявляем переменные
 */
 
 public class Solution {
