@@ -18,5 +18,19 @@ public class Solution {
 
     public static void main(String[] args) {
         //start here - начни тут
+        switch (args[0]) {
+            case "-c":
+                if (args[2] == "м")
+                    allPeople.add(Person.createMale(args[1], new Date(args[3])));
+                if (args[2] == "ж")
+                    allPeople.add(Person.createFemale(args[1], new Date(args[3])));
+                break;
+            case "-u":
+                break;
+            case "-d":
+                break;
+            case "-i":
+                break;
+        }
     }
 }
